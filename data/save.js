@@ -1,0 +1,1 @@
+String.prototype.save=function(t){if(void 0===t)try{return JSON.parse(localStorage[this])}catch{return localStorage[this]}else localStorage[this]=JSON.stringify(t)}

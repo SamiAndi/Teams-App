@@ -1,0 +1,125 @@
+@font-face {
+    font-family: 'Sahel';
+    src: url('sahel.woff2') format('woff2');
+}
+
+* {
+    font-family: 'Sahel';
+    text-align: center;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+    direction: ltr;
+}
+
+body {
+    background: url(bg.png);
+    height: 100%;
+}
+
+.block {
+    float: left;
+    height: 100%;
+}
+
+iframe {
+    width: calc(100% - 400px);
+}
+
+#panel {
+    width: 400px;
+    padding: 20px;
+    overflow-y: scroll;
+}
+
+#client,
+#log {
+    position: fixed;
+    font-weight: bold;
+    font-size: 95%;
+    left: 10;
+    bottom: 10;
+    opacity: .4;
+    transition: .4s;
+}
+
+#client:hover,
+#log:hover {
+    opacity: 1;
+}
+
+#log {
+    bottom: 55;
+}
+
+#eye {
+    width: 35px;
+    height: auto;
+    margin: -15px 0 5px;
+    cursor: pointer;
+}
+
+.hide #eye {
+    filter: invert(22%) sepia(96%) saturate(4113%) hue-rotate(337deg) brightness(78%) contrast(116%);
+}
+
+.hide .eye {
+    display: none;
+}
+
+form {
+    padding: 20px;
+    border-radius: 30px;
+    direction: rtl;
+}
+
+form:last-child {
+    margin-bottom: 0;
+}
+
+.col {
+    width: 49%;
+    display: inline;
+}
+
+input,
+.btn {
+    border-radius: 30px !important;
+    padding: 7px 14px !important;
+}
+
+[type=submit] {
+    margin-top: 20px;
+    width: 51%;
+}
+
+[type=submit]:not(:first-of-type) {
+    margin-top: 5px;
+}
+
+#form-add {
+    background: rgba(0, 255, 42, .3);
+}
+
+#form-remove {
+    background: rgba(255, 0, 0, .3);
+}
+
+#form-score {
+    background: rgba(255, 250, 0, .3);
+}
+
+#form-new {
+    background: rgba(0, 140, 255, .3);
+}
+
+#form-log {
+    background: rgba(0, 0, 0, .3);
+}

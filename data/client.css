@@ -1,0 +1,97 @@
+@font-face {
+    font-family: 'Sahel';
+    src: url('sahel.woff2') format('woff2');
+}
+
+* {
+    font-family: 'Sahel';
+    text-align: center;
+    font-weight: bold;
+}
+
+body {
+    background: linear-gradient(45deg, #4735a0, #be2352);
+    background-attachment: fixed;
+}
+
+#table {
+    width: 70%;
+    margin: 25px auto;
+    direction: rtl;
+}
+
+.row {
+    margin-bottom: 17px;
+    background: whitesmoke;
+    border-radius: 25px;
+    padding: 18px;
+}
+
+#table>.row {
+    color: white;
+    background: transparent;
+    padding: 8px 18px;
+}
+
+#rows .row:nth-child(1) {
+    background: #eac018;
+    animation: gold 2.5s;
+    animation-iteration-count: infinite;
+}
+
+#rows .row:nth-child(2) {
+    background: silver;
+    animation: silver 2.5s;
+    animation-iteration-count: infinite;
+}
+
+#rows .row:nth-child(3) {
+    background: rgb(229, 172, 150);
+    animation: bronze 2.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes gold {
+    25% {
+        background: #ffff00;
+    }
+    50% {
+        background: #eac018;
+    }
+    75% {
+        background: #eac018;
+    }
+    100% {
+        background: #eac018;
+    }
+}
+
+@keyframes silver {
+    25% {
+        background: silver;
+    }
+    50% {
+        background: white;
+    }
+    75% {
+        background: silver;
+    }
+    100% {
+        background: silver;
+    }
+}
+
+@keyframes bronze {
+    25% {
+        background: rgb(229, 172, 150);
+    }
+    50% {
+        background: rgb(229, 172, 150);
+    }
+    75% {
+        background: #fd6700;
+    }
+    100% {
+        background: rgb(229, 172, 150);
+    }
+}

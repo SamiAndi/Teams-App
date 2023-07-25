@@ -1,0 +1,44 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="data/bootstrap.css">
+    <link rel="stylesheet" href="data/index.css">
+    <script src="data/save.js"></script>
+    <script src="data/db.js"></script>
+    <script src="data/jquery.js"></script>
+    <script src="data/index.js"></script>
+    <title>Teams | Panel</title>
+</head>
+
+<body>
+    <iframe class="block" src="data/client.html"></iframe>
+    <div class="block" id="panel">
+        <a id="client" class="btn btn-warning" target="_blank" href="data/client.html">صفحه سمت کاربر</a>
+        <img id="eye" src="data/eye.svg">
+        <form id="form-add" class="eye">
+            <input class="form-control col code" placeholder="کد کاربر" type="number" required>
+            <input class="form-control col name" placeholder="نام کاربر" type="text" spellcheck="false" required>
+            <button class="btn btn-success" type="submit">کاربر را اضافه کن</button>
+        </form>
+        <form id="form-remove" class="eye">
+            <input class="form-control code" placeholder="کد کاربر" type="number" required>
+            <button class="btn btn-danger" type="submit">کاربر را حذف کن</button>
+        </form>
+        <form id="form-score">
+            <input class="form-control col code" placeholder="کد کاربر" type="number" required>
+            <input class="form-control col score" placeholder="اختلاف امتیاز" type="number" required>
+            <button class="btn btn-success" onclick="plus=1" type="submit">+ افزایش امتیاز</button>
+            <button class="btn btn-danger" onclick="plus=0" type="submit">- کاهش امتیاز</button>
+        </form>
+        <form id="form-new">
+            <input class="form-control col code" placeholder="کد کاربر" type="number" required>
+            <input class="form-control col score" placeholder="امتیاز جدید" type="number" required>
+            <button class="btn btn-primary" type="submit">تعریف امتیاز</button>
+        </form>
+    </div>
+</body>
+
+</html>
